@@ -1,0 +1,68 @@
+/*!
+Theme Name: Poseidon Child WPYTHub
+Theme URI: https://themezee.com/themes/poseidon/
+Template: poseidon
+Author: CodeFlavors
+Author URI: https://codeflavors.com
+Description: Child theme developed for compatibility with WordPress plugin WPYTHub (https://wpythub.com)
+Tags: two-columns,custom-background,custom-header,custom-logo,custom-menu,blog,news,editor-style,block-styles,rtl-language-support,featured-image-header,featured-images,flexible-header,custom-colors,full-width-template,sticky-post,threaded-comments,translation-ready,theme-options,one-column,left-sidebar,right-sidebar,three-columns
+Version: 1.0
+Updated: 2021-11-16
+*/
+
+/**
+ * Post type archive and videos taxonomy pages
+ */
+article{
+  &.wpythub{
+    &.video-post{
+
+      .entry-content{
+        padding:0;
+        display: flex;
+        margin-bottom: 1em;
+
+        div{
+          &.featured-image{
+            margin-right: 1em;
+            width:30%;
+
+            img{
+              width:100%;
+              max-width: 100%;
+            }
+
+          }
+        }
+
+        h2{
+          &.entry-title{
+            margin:0;
+            font-size: 1.2em;
+            width:60%;
+
+            a{
+              text-decoration: none;
+
+              &:hover{
+                text-decoration: underline;
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Single video post page
+ */
+.single-video{
+  article{
+    .ccb_single_video_player{
+      margin-bottom: 2em;
+    }
+  }
+}
