@@ -64,8 +64,8 @@ function poseidon_wpythub_post_video(){
  * Displays the custom header image below the navigation menu
  */
 function poseidon_header_image() {
-
-	if( ccb_is_video() ){
+    // No header image for videos
+	if( function_exists( 'ccb_is_video' ) && ccb_is_video() ){
 		return;
 	}
 
